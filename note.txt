@@ -1,0 +1,13 @@
+Functional Component là gì?
+
+- Tạo component bằng function 
+- Tạo bằng arrow function hoặc function truyền thống
+
+Hook là gì?
+
+- Nó là 1 function đặc biệt (Bắt đầu bằng từ khóa use)
+- React cung cấp sẵn các hook để làm việc với các thành phần của React (State, Component Litecycle,...)
+- Hook là 1 món quà của React tặng cho lập trình viên => Code ngắn gọn hơn
+- Ngoài các hook có sẵn trong thư viện React => react cho phép tạo tạo các hook riêng (Custom Hook) => Cho phép sử dụng các Hook có sẵn của React 
+
+Khi sử dụng thêm các thư viện bên ngoài => Sẽ có thêm các hook của thư viện đó định nghĩa
