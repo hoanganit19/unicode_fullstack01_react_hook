@@ -1,0 +1,54 @@
+@keyframes playing {
+  from {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.player {
+  max-width: 500px;
+  margin: 0 auto;
+
+  .player__image {
+    text-align: center;
+    img {
+      width: 200px;
+      height: 200px;
+      transition: all 0.4s linear;
+      border-radius: 20px;
+      &.playing {
+        border-radius: 50%;
+        animation: playing 2s linear infinite both;
+      }
+    }
+  }
+
+  .player__inner {
+    .player__inner--action {
+      span {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .player__volume {
+    height: 100%;
+    span {
+      cursor: pointer;
+    }
+  }
+}
