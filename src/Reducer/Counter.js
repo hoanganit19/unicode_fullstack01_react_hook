@@ -6,8 +6,8 @@ export default function Counter() {
   */
   const initialState = {
     count: 0,
-    // posts: [],
-    // msg: "",
+    posts: [],
+    msg: "",
   };
   /*
   Định nghĩa Reducer
@@ -17,10 +17,10 @@ export default function Counter() {
   const countReducer = (state, action) => {
     switch (action) {
       case "increment":
-        return { count: state.count + 1 };
+        return { ...state, count: state.count + 1 };
 
       case "decrement":
-        return { count: state.count - 1 };
+        return { ...state, count: state.count - 1 };
 
       default:
         throw new Error();
@@ -42,6 +42,8 @@ export default function Counter() {
   const handleDecrement = () => {
     dispatch("decrement");
   };
+
+  console.log(state);
 
   const { count } = state;
 
