@@ -1,0 +1,9 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.theme-dark {
+  background: #333;
+  color: #efefef;
+}
