@@ -23,7 +23,7 @@ export default function Counter() {
         return { ...state, count: state.count - 1 };
 
       default:
-        throw new Error();
+        throw new Error(`Không tồn tại action: ${action}`);
     }
   };
 

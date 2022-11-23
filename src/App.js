@@ -7,12 +7,15 @@ import Player from "./Player/Player";
 import ContextDemo from "./Context/ContextDemo";
 import Main from "./Context/Main";
 import Counter from "./Reducer/Counter";
+import DemoSetState from "./Reducer/DemoSetState";
+import StateProvier from "./StateProvider/StateProvier";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <>
-      <Counter />
-    </>
+    <StateProvier>
+      <Home />
+    </StateProvier>
   );
 }
 
