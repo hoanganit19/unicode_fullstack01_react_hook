@@ -1,0 +1,11 @@
+.todos {
+  .todos__list {
+    .todos--item {
+      &.completed {
+        span {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+dispatch(action)
+
+action: là 1 object 
+
+=> Thay đổi cấu trúc action => Tìm tất cả file để sửa
+
+Sử dụng action creator => là 1 function return về 1 object

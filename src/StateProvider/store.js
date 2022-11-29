@@ -17,7 +17,7 @@ import { combineReducers, combineInitialStates } from "./core";
 //const initialState = {};
 
 const reducers = {
-  counter: countReducer,
+  //  counter: countReducer,
   todos: toDoReducer,
 };
 

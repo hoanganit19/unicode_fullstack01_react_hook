@@ -1,0 +1,61 @@
+@-webkit-keyframes playing {
+  from {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes playing {
+  from {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.player {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.player .player__image {
+  text-align: center;
+}
+.player .player__image img {
+  width: 200px;
+  height: 200px;
+  transition: all 0.4s linear;
+  border-radius: 20px;
+}
+.player .player__image img.playing {
+  border-radius: 50%;
+  -webkit-animation: playing 3s linear infinite both;
+          animation: playing 3s linear infinite both;
+}
+.player .player__inner .player__inner--action span {
+  cursor: pointer;
+}
+.player .player__volume {
+  height: 100%;
+}
+.player .player__volume span {
+  cursor: pointer;
+}/*# sourceMappingURL=Player.css.map */
